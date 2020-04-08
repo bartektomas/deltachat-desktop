@@ -15,6 +15,7 @@ files:
   - "!**/*.js.map"
   - "!**/*.css.map"
   - "!html-dist/report.htm"
+  - "!node_modules/typescript/"
 
 # platform specific
 mac:
