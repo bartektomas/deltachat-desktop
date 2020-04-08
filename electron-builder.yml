@@ -1,3 +1,7 @@
+# unpack core from asar
+asarUnpack:
+ - 'node_modules/deltachat-node/prebuilds'
+
 files:
   - filter:
     - "**/*" 
