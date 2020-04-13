@@ -56,13 +56,18 @@ files:
     - "!node_modules/deltachat-node/deltachat-core-rust/"
     - "!node_modules/deltachat-node/src"
 
+afterSign: "build/notarize.js"
 # platform specific
 mac:
   category: public.app-category.social-networking
   appId: chat.delta.desktop.electron
   icon: resources/icon.icns
-  gatekeeperAssess: true
+  hardenedRuntime: true
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  gatekeeperAssess: false
 dmg:
+  sign: false
   contents:
     - x: 220
       y: 200
