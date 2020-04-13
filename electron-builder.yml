@@ -63,8 +63,6 @@ mac:
   appId: chat.delta.desktop.electron
   icon: resources/icon.icns
   hardenedRuntime: true
-  entitlements: build/entitlements.mac.plist
-  entitlementsInherit: build/entitlements.mac.plist
   gatekeeperAssess: false
 dmg:
   sign: false
