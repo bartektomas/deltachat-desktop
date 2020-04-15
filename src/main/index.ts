@@ -1,3 +1,4 @@
+console.log('starting')
 console.time('init')
 
 import { ensureDirSync, readJsonSync, watchFile, existsSync } from 'fs-extra'
